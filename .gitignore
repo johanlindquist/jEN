@@ -3,3 +3,6 @@ dist
 files
 javadoc
 releases
+.idea
+*.iml
+target
