@@ -32,6 +32,11 @@ public class DynamicPlaylistSession {
         this.sessionID = sessionID;
     }
 
+    public String getSessionID()
+    {
+        return sessionID;
+    }
+
     /**
      * Restarts a playlist session. Given the session ID and a new set of
      * playlist parameters, this method restarts the playlist session based upon
@@ -79,7 +84,10 @@ public class DynamicPlaylistSession {
         Map response = (Map) cresults.get("response");
 
         String session = (String) response.get("session_id");
-
+        if (session == null)
+        {
+            session = sessionID;
+        }
 
         List<Song> songResults = new ArrayList<Song>();
 
