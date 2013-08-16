@@ -3,7 +3,7 @@
     <groupId>com.googlecode.jen-api</groupId>
     <artifactId>jen-api</artifactId>
     <modelVersion>4.0.0</modelVersion>
-    <version>4.x.q-SNAPSHOT</version>
+    <version>4.x.u-SNAPSHOT</version>
     <name>jen-api</name>
 
     <licenses>
